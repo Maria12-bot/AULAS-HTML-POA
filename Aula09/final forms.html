@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Form</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #729dd1;
+        }
+    </style>
+
+    <form action="#">
+        <label for="nome"> Nome Aluno:</label>
+        <input type="text" id="nome" name="nome">
+      <br>
+      <br>
+        <label for="adress"> Endereço:</label>
+        <input type="text" id="adress" name="adress">
+       <BR>
+       <BR>
+
+        <label for="number">Telefone para contato:</label>
+        <input type="text" id="number" name="number">
+        <br>
+        <br>    
+
+        <p> Escolha a opção de turmas: </p>
+        <input type="checkbox" name="turma1" id="t01">
+        <label for="t01"> Turma 01 -Manhã</label>
+        <br>
+
+        <input type="checkbox" name="turma2" id="t02">
+        <label for="t01"> Turma 02-Tarde</label>
+        <br>
+
+        <input type="checkbox" name="turma3" id="t03">
+        <label for="t01"> Turma 03-Noite</label>
+        <br>
+        <br>
+
+        <P> Qual série está cursando atualmente?</P>
+        <input type="checkbox" name="serie" id="serie">
+        <label for="serie"> 1º Ano Ens. Méd </label>
+        <br>
+
+        <input type="checkbox" name="serie" id="serie">
+        <label for="serie"> 2º Ano Ens. Méd </label>
+        <br>
+
+
+        <input type="checkbox" name="serie" id="serie">
+        <label for="serie"> 3º Ano Ens. Méd </label>
+        <br>
+        <br>
+        <hr>
+        <p>Tamanho de Uniformes disponíveis:</p>
+
+        <select name="uniforme" id="uniforme">
+            <option disabled selected>Selecione</option>
+            <option value="uniP">Uniforme P</option>
+
+            <option value="uniM">Uniforme M</option>
+
+            <option value="uniG">Uniforme G</option>
+
+            <option value="uniGG">Uniforme GG</option>
+
+            <option value=" uniPP">Uniforme PP</option>
+
+        </select>
+        <br>
+        <br>
+
+        <p>Quais cursos você tem inteesse em fazer?</p>
+        <select>
+            <option disabled selected>Selecione</option>
+
+            <option value="">Inglês</option>
+
+            <option value="">Programação Web</option>
+
+            <option value="">Mercado do Trabalho</option>
+
+            <option value="">Administração</option>
+        </select>
+        <br><br>
+
+        <p>Quantos anos você tem?:</p>
+        <select>
+            <option disabled selected>Selecione</option>
+
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <br><br>
+        </select>
+
+        <br>
+        <br>
+        <br>
+        <p> Em qual Estado você reside?</p>
+        <select>
+            <option disabled selected>Selecione</option>
+        <option value="">SP</option>
+        <option value="">RS</option>
+        <option value="">MG</option>
+        <option value="">PE</option>
+        <option value="">SP e INTERIOR</option>
+        
+        </select>
+         <BR>
+            <BR>
+        <label for="sugestão"> Deixe sua sugestão: <span style=" color: red;">*</span></label> <br>
+
+        <textarea name="sugestao" id="sugestao" placeholder="Por gentileza, deixe aqui sua sugestão!!" cols="40"
+            rows="10" maxlength="140" required="required">
+        
+    </textarea>
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
