@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>Índice de Massa Corporal </h1>
+        <button onclick="mudarCor()">Dark mode</button>
+        <nav>
+            <ul>
+                <li><a href="#text">O que é o IMC</a></li>
+                <li><a href="#calc">Calcule o seu IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-text" id="text">
+            <div class="text">
+                <h2>IMC: o que é, como se calcula e para que serve</h2>
+                <p>
+                    Índice é usado para determinar peso ideal e gradações que indicam magreza, sobrepeso e obesidade
+                    O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela
+                    Organização
+                    Mundial de Saúde (OMS), para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do
+                    indivíduo, o IMC também aponta níveis de magreza e obesidade, que são usados para nortear o trabalho
+                    de
+                    profissionais de saúde e de educadores físicos.
+
+                    Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado
+                    (altura x altura). De acordo com o indicador, o peso considerado saudável é aquele situado entre
+                    18,5 e
+                    24,9.
+                </p>
+
+                <p>
+                    Mais da metade dos brasileiros está acima do peso
+
+                    De acordo com o Ministério da Saúde (MS), atualmente 60% dos brasileiros acima de 18 anos apresentam
+                    sobrepeso, e um em cada quatro é considerado obeso. O MS, no entanto, aponta algumas exceções em
+                    relação
+                    ao índice: 1- crianças, adolescentes e idosos (a partir de 60 anos), que possuem composições
+                    corporais
+                    específicas; 2- pessoas com muita massa magra (músculos) podem ter IMC mais alto, sem estarem com
+                    sobrepeso ou obesidade; 3- mesmo sem estar com sobrepeso ou obesidade, a pessoa pode estar com
+                    níveis
+                    inadequados de colesterol, triglicérides, gordura e açúcar no sangue, por isso é importante realizar
+                    exames regulares; 4- mulheres grávidas.
+
+                    Considerada um problema de saúde pública, uma vez que atinge cada vez mais pessoas e está associada
+                    ao
+                    aumento de risco para doenças cardiovasculares, articulares, hipertensão, diabetes e depressão,
+                    entre
+                    outras doenças, a obesidade é um problema complexo que envolve uma série de fatores socioambientais.
+                    Por
+                    isso, a disseminação de informações sobre cuidados com a alimentação e hábitos saudáveis é parte
+                    essencial no combate à obesidade.
+
+                    O aplicativo Conecte SUS, do Ministério da Saúde, disponibiliza o botão “Peso saudável”, onde é
+                    possível
+                    calcular o IMC e obter uma série de dicas e informações sobre o tema. A funcionalidade também está
+                    disponível na área "Minha saúde" da e-saúdeSP, a plataforma de saúde paulistana.
+
+                    Nas consultas regulares aos médicos nas Unidades Básicas de Saúde e outros equipamentos da rede
+                    pública,
+                    os cidadãos podem ter mais informações, orientação e encaminhamento para exames, caso seja
+                    necessário.
+                </p>
+            </div>
+
+            <img src="https://img.freepik.com/vetores-gratis/infografico-gradiente-bmi_23-2150143471.jpg?t=st=1731069412~exp=1731073012~hmac=cd8459bd4e7d6405318b7e1cf192c0aebd2bce9d84ad7919911f3eb666f09018&w=900"
+                alt="BMI" width="640px" height="400px">
+        </div>
+    </section>
+    <section>
+        <div class="container-calc" id="calc">
+            <div class="calc">
+                <form action="#">
+                    <div class="altura">
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" name="altura" id="altura">
+                    </div>
+                    <div class="peso">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" name="peso" id="peso">
+                    </div>
+                    <div class="resultado">
+                        <button type="button" onclick="calcImc()">Calcular IMC</button>
+                        <p>Seu índice de massa corporal é: <span id="resultado"></span></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="imc-table">
+                <table>
+                    <caption>Tabela de Índice de Massa Corporal (IMC)</caption>
+
+                    <thead>
+                        <tr>
+                            <th>IMC (KG/M²)</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Menor que 18,5</td>
+                            <td>Abaixo do peso</td>
+                        </tr>
+
+                        <tr>
+                            <td>18,5 a 24,9</td>
+                            <td>Peso normal</td>
+                        </tr>
+
+                        <tr>
+                            <td>25 a 29,9</td>
+                            <td>Sobrepeso</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>30 a 34,9</td>
+                            <td>Obesidade grau I </td>
+                        </tr>
+
+                        <tr>
+                            <td>35 a 39,9</td>
+                            <td>Obesidade grau II</td>
+                        </tr>
+
+                        <tr>
+                            <td>40 a 49,9</td>
+                            <td>Obesidade grau III</td>
+                        </tr>
+                        <tr>
+                            <td>50 a 59,9 </td>
+                            <td>Obesidade grau IV</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 60 </td>
+                            <td>Obesidade grau V</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>&copy;Vinicius Claudiano | Todos direitos reservados</h3>
+    </footer>
+
+    <script>
+        function calcImc() {
+            const height = parseFloat(document.getElementById("altura").value);
+            const weight = parseFloat(document.getElementById("peso").value);
+            const result = weight / (height ** 2);
+            document.getElementById("resultado").textContent = result.toFixed
+                (2);
+        }
+
+        function mudarCor() {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'white' ? 'black' : 'white';
+            document.body.style.color = document.body.style.color === 'black' ? 'white' : 'black';
+        }
+
+
+    </script>
+</body>
+
+</html>

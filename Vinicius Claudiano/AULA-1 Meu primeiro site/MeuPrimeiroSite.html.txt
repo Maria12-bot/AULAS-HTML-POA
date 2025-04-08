@@ -1,0 +1,15 @@
+<!doctype htlm>
+<htlm lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Meu site</title>
+<\head>
+
+<body>
+<h1>MUNDO</h1>
+<p>Meu primeiro site</p>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    
+    <!-- Para começar a criar uma tabela tabela: <form action="#" method="post">. -->
+    
+    <!-- Para inserir os elementos da tabela: <label>. o "for" e o "id" é o nome. -->
+    
+    <!-- Para inserir a box para digitar: <input>. "type" para o tipo de informção que vai entrar, ex: texto, numero,
+    etc. "name" e "id" para nome. no final um "placeholder" para fazer aquele texto que fica por no fundo. -->
+
+    <form action="#" method="post">
+        <div class="nome">    
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+        </div>
+       
+        
+        <div class="senha">
+            <label for="senha">Senha:</label>
+            <input type="text" name="senha" id="senha" placeholder="Digite sua Senha">
+        </div>
+        
+        
+        <div class="email">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu E-mail">
+        </div>
+        
+
+        <div class="idade">
+            <label for="idade">idade:</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade" min="18" max="100" class="small-input">
+        </div>
+        
+
+        <div class="website">
+            <label for="website">Website:</label>
+            <input type="url" name="website" id="website" placeholder="https://">
+        </div>
+        
+
+        <div class="telefone">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+        </div>
+        
+
+        <div class="genero">
+            <label for="genero">Gênero:</label>
+            <input type="radio" name="genero" id="masculino" class="small-input" value="masculino">
+
+            <label for="masculino" class="inline-label">Masculino</label>
+            <input type="radio" name="genero" id="feminino" class="small-input" value="feminino">
+
+            <label for="feminino" class="inline-label">Feminino</label>
+            <input type="radio" name="genero" id="outro" class="small-input" value="outro">
+
+            <label for="outro" class="inline-label">Outro</label>
+        </div>
+
+
+        <div class="data-de-nascimento">
+            <label for="data-de-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-de-nascimento" id="data-de-nascimento">
+        </div>
+        
+
+        <div class="cor-favorita">
+            <label for="cor-favorita">Cor Favorita:</label>
+            <input type="color" name="cor-favorita" id="cor-favorita">
+        </div>
+        
+
+        <div class="satisfacao">
+            <label for="satisfacao">Satisfação (De 0 a 10):</label>
+            <input type="range" name="satisfacao" id="satisfacao" min="0" max="10">
+        </div>
+        
+
+        <div class="comentarios">
+            <label for="comentarios">Comentários:</label> <br>
+            <textarea name="comentarios" id="comentarios" rows="5" placeholder="Escreva seu comentário"></textarea>
+        </div>
+        
+
+        <div class="pais">
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="brasil">Brasil</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="franca">França</option>
+                <option value="japao">Japão</option>
+                <option value="australia">Austrália</option>
+                <option value="afica-do-sul">África do Sul</option>
+           </select>
+        </div>
+        
+        <div class="termos">
+            <label for="termos">Aceito os termos:</label>
+            <input type="checkbox" name="termos" id="termos">
+        </div>
+        
+
+        <div class="arquivo">
+            <label for="arquivo">Carregar arquivo:</label>
+            <input type="file" name="arquivo" id="arquivo">
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+
+    </form>                   
+</body>
+</html>

@@ -1,0 +1,52 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    
+    /* Estes elementos abaixo são os mais importantes. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(13deg, #c300ff, #8c00ff, #4d0080);
+    /* Não esquecer. */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    animation: PlanodeFundoAnimado 1s infinite;
+
+}
+
+.animacao{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    animation: animacao 5s infinite;
+    
+    
+}
+
+@keyframes PlanodeFundoAnimado {
+    0%{
+        background: linear-gradient(360deg,#4d0080,#8c00ff,#c300ff);
+    }
+    50%{
+        background: linear-gradient(360deg#8c00ff,#c300ff,#4d0080);
+    }
+    100%{
+        background: linear-gradient(360deg#c300ff, #8c00ff, #4d0080);
+    }
+}
+
+@keyframes animacao {
+    0%{
+        color: #ff0000;
+        font-size: medium;
+    }
+    50%{
+        color: rgb(95, 158, 160);
+        font-size: large;
+    }
+    100%{
+        color: #000000;
+        font-size: xx-large;
+    }
+}

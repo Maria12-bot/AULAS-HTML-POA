@@ -1,0 +1,169 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5c95e;
+}
+
+header{
+    background-color: #c5a286;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.intro{
+    font-size: 0.5cm;
+    font-weight: 500;
+    /* border: 2px solid black; */
+    background-color: #a78b6d44;;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+main{
+    padding: 50px;
+    padding-top: 0;
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+section{
+    /* border: 2px solid black; */
+    background-color: #a78b6d44;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    color: #000000;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #18181871;
+}
+
+tr{
+    background-color: #13131328;
+}
+
+table, th , td{
+    border: 1px solid #0000002a;
+    padding: 15px;
+    text-align: left;
+}
+
+figure{
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea{
+    padding: 10px;
+    border: 2px solid #665445c4;
+    border-radius: 8px;
+}
+
+label{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    
+}
+
+form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7c6654;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+form button:hover{
+    background-color: #7c6654e1;
+}
+
+footer{
+    background-color: #000000c7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-indent: 5px;
+}

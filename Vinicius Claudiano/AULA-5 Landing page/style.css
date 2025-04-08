@@ -1,0 +1,146 @@
+/* "*" para aplicar em tudo. */
+/* Estes 3 servem para deixar as seções mais unificadas. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* "line-height" serve para facilitar a leitura. começa no 1 e não deve ser maior que 2. */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+nav {
+    /* "position fixed" para que quando scrollar os botões do cabeçalho acompanhem na tela. */
+    position: fixed;
+    /* "top 0" para seção do cabeçalho fique encostado no topo da página.  */
+    top: 0;
+    width: 100%;
+    background-color: #172c4456;
+    /*alguma cor;*/
+    /* esse padding aqui com 2 valores ta mudando a horizontal e a vertical respectivamente. */
+    padding: 20px 0;
+}
+
+/* a ordem dos elementos aqui funicona assim: quero formatar a "ul" que esta dentro da "nav". vai funcionar assim para todos os outros na sequencia. */
+nav ul {
+    /* "list-line-type: none" remove os marcadores. */
+    list-style-type: none;
+    /* "display flex" n tem muito o que comentar, apenas use. */
+    display: flex;
+    /* "justify-content: center" deixa os elementos alinhados horizontalmente. só funciona se estiver utilizando o "display: flex". */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    /* "text-decoration: none" para tirar o efeito sublinhado do link. */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    /* "transition: color" para criar o efeito de mudar a cor quando passar o mouse por cima. */
+    transition: color 0.3s;
+}
+
+/* esse ":hover" apos o "a" serve para ter alguma ação quando o mouse passar em cima do link. */
+/* "hover" para fazer alguma ação quando o mouse estiver em cima do elemento. nesse caso ele ta mudando a cor. */
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* "not(#home)" para mudar a section menos o "#home" */
+section:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* esse "height" aqui é interessante. ele esta fazendo com que cada seção tenha 100% da altura no espaço da tela. */
+    height: 100vh;
+}
+
+#home {
+    /* background-color: #4A90E2; */
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/24/14/27/geometric-3037028_1280.png);
+    /* "background-size: cover" para o background (nesse caso a imagem da url acima) cobrir toda tela. */
+    background-size: cover;
+    /* "background-repeat: no-repeat" para que a imagem não fique repetindo ela msma quando n tiver a largura e altura necessaria. */
+    background-repeat: no-repeat;
+    color: rgb(red, green, blue);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    /* "flex-direction: column" para fazer com que os itens se alinhem um sobre o outro. */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    /* "flex-direction: row" para os itens se alinharem em linha. */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    /* "object-fit: cover" para iten ficar certinho cobrindo todo o espaço desejado. */
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text {
+    /* "max-width: 600px" para dizer o limite da largura horizontal. */
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#services {
+    background-color: #ffffff;
+}
+
+#about {
+    background-color: #EAEAEA;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: #89ff29;
+    color: rgb(red, green, blue);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    /* "cursor" muda o cursor para texto ou botão com link. */
+    cursor: pointer;
+    box-shadow: 3px 6px 6px #000000;
+    /* não faço ideia o que é isso */
+    transition: background-color 1s ease, transform 1s ease;
+}

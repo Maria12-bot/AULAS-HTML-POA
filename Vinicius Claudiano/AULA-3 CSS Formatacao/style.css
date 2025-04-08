@@ -1,0 +1,108 @@
+/* usar "*" para mudar tudo. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 41, 88);
+    /* background image para selecionar uma imagem. url para utilizar uma imagem da internet. */
+    background-image: url(https://img.freepik.com/free-vector/background-abstract-line-digital-design-gradient-template_483537-2158.jpg?w=1060&t=st=1726488599~exp=1726489199~hmac=d0b8a1945d52202d12d61d98716bd2249e640aa7b6e8cff82b08771fe2f54c47);
+    /* cover para que a imagem se estique e cubra toda a pagina. */
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-color:midnightblue;
+    animation: mudarCores 6s infinite;
+
+}
+
+img{
+    height: 400px;
+    
+}
+
+main{
+    /* border sempre começar com Cor, Tipo de cor e expessura. */
+    border: black solid 3px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(95, 158, 160, 0.473);
+    border-radius: 20px;
+
+}
+
+p{
+    font-family:sans-serif;
+    color: rgb(59, 1, 50);
+    font-weight: 300px;
+    /* font-style:italic; */
+    /* font-stretch: ultra-expanded; */
+    /* line-height: 30px; */
+    letter-spacing: 1px; 
+    /* word-spacing: 10px; */
+    text-align: justify;
+    /* text-decoration: underline dashed #0a015f; */
+    /* text-transform: capitalize; */
+    text-indent: 30px;
+    text-shadow:100px 100px 100px #000000;
+    text-decoration: solid;
+
+}
+
+
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-decoration-line: underline ;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.img{
+    padding-left: 160px;
+    /* border:#000000 solid; */
+    
+    
+    
+
+}
+
+
+@keyframes mudarCores {
+    0%{
+        background-color:red ;
+
+    }
+    25%{
+        background-color:green ;
+
+    }
+    50%{
+        background-color:blue ;
+
+    }
+    75%{
+        background-color:purple ;
+        
+    }
+    100%{
+        background-color:yellow ;
+
+    }
+}

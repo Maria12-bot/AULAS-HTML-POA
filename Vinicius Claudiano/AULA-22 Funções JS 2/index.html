@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funções JavaScript 2</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="funcoes">
+                <h1>Funções - JavaScript</h1>
+                <button class="button" onclick="toggleText()"> Mostrar / Ocultar o texto </button>
+                <p id="toggleText"> Este exemplo de texto será exibido e ocultado. </p>
+            </div>
+            <div class="calculadora">
+                <h2>Calculadora Simples</h2>
+                <input type="number" name="" id="num1" placeholder="Número 1">
+                <input type="number" name="" id="num2" placeholder="Número 2">
+                <button class="button" onclick="sumCalculate()">Calcular</button>
+                <p id="sumResult+">Soma: </p>
+                <p id="sumResult-">Subtração: </p>
+                <p id="sumResult*">Multiplicação: </p>
+                <p id="sumResult/">Divisão: </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //-----Funções-----//
+        function toggleText() {
+            const text = document.getElementById("toggleText");
+            text.style.display = text.style.display === "none" ? "block" : "none";
+        }
+        //----Calculadora-----//
+        function sumCalculate(){
+
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const resultadoSoma = num1 + num2;
+            const resultadoSubtracao = num1 - num2;
+            const resultadoMultiplicacao = num1 * num2;
+            const resultadoDivisao = num1 / num2;
+
+            document.getElementById("sumResult+").innerText = resultadoSoma;
+            document.getElementById("sumResult-").innerText = resultadoSubtracao;
+            document.getElementById("sumResult*").innerText = resultadoMultiplicacao;
+            document.getElementById("sumResult/").innerText = resultadoDivisao;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+</head>
+<body>
+ 
+
+ <!--    header section -->
+    <header class="sticky top-0 right-0 left-0 md:top-0 bg-color-white z-50">
+        <nav class="container  mx-auto py-4 md:py-2 relative ">
+            <div class="flex flex-row items-center justify-between px-2 md:px-0">
+            <div class=""> 
+                <img src="./images/logo.png" class="h-4" alt="Logo">
+            </div>
+
+            <div >
+                <ul class=" flex-row items-center gap-5 hidden md:flex ">
+                    <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Home</a></li>
+                    <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Features</a></li>
+                    <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Community</a></li>
+                    <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Blog</a></li>
+                    <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Pricing</a></li>
+
+                    <li> <button class="btn-primary">Register Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+                       </li>
+                </ul>
+
+                <div class="inline-block md:hidden">
+                    <i class="fa-solid fa-bars text-2xl " id="hamburger"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+<div id="mobile_menu" class=" absolute bg-color-white w-full pb-5 hidden top-0 right-0">
+
+<div class="flex justify-end">
+    <i class="fa-solid fa-xmark text-2xl   py-3 mr-5" id="nav-close"></i>
+</div>
+            
+
+            <ul class=" flex flex-col items-center gap-5  ">
+                <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Home</a></li>
+                <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Features</a></li>
+                <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Community</a></li>
+                <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Blog</a></li>
+                <li><a href="#home" class="text-sm hover:text-color-primary-shade-1 ease-out duration-200">Pricing</a></li>
+
+                <li> <button class="btn-primary">Register Now <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+                   </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+
+    <!-- main section -->
+    <main>
+
+        <section class="bg-color-neutral-silver">
+            <div class="container mx-auto">
+
+                <div class="flex flex-col-reverse md:flex-row items-center justify-between py-14 px-5 md:px-0">
+                <div class=" w-full md:w-1/2">
+                    <h1 class="text-3xl mt-5 md:mt-0 md:text-[44px] font-bold text-color-neutral-d-grey leading-tight  tracking-wider font-inter ">Lessons and insights <br/>
+                        <span class="text-color-primary-shade-1">from 8 years</span>
+                    </h1>
+
+                <p class="text-sm tracking-wide mt-5 text-color-neutral-l-grey font-inter">Where to grow your business as a photographer: site or social media?</p>
+                <button class="btn-primary mt-5">Register</button>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-end items-end">
+
+                    <img src="./images/Illustration.svg" alt="settings image">
+                </div>
+            </div>
+
+            <!-- navigation icon -->
+            <div class="flex flex-row gap-1 items-center justify-center pb-4">
+                <div class="w-2 h-2 rounded-full bg-color-success" ></div>
+                <div class="w-2 h-2 rounded-full bg-color-success opacity-50" ></div>
+                <div class="w-2 h-2 rounded-full bg-color-success opacity-20" ></div>
+            </div>
+        </div>
+        </section>
+
+        <section id="client" class="py-10">
+
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="title">Our Clients</h2>
+                    <p class="paragraph">We have been working with some Fortune 500+ clients</p>
+                </div>
+
+
+                    <div class="flex flex-row  pt-10 overflow-hidden items-center justify-center gap-20 px-2 md:px-0">
+                        <img src="./images/clients/logo1.svg" alt="client 1">
+                        <img src="./images/clients/logo2.svg" alt="client 2">
+                        <img src="./images/clients/logo3.svg" alt="client 3">
+                        <img src="./images/clients/logo4.svg" alt="client 4">
+                        <img src="./images/clients/logo5.svg" alt="client 5">
+                        <img src="./images/clients/logo6.svg" alt="client 6">
+                        <img src="./images/clients/logo7.svg" alt="client 7">
+                    </div>
+               
+            </div>
+        </section>
+
+        <section id="service" >
+
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="title max-w-sm text-center">Manage your entire community  in a single system</h2>
+                    <p class="paragraph mt-2">Who is Nextcent suitble for?</p>
+                </div>
+
+
+                   <div class="flex flex-col md:flex-row md:justify-around justify-center py-10 mx-4 md:mx-0 ">
+                    
+                    <!-- card one --> 
+                    <div class="flex flex-col items-center justify-center md:w-1/4 w-full   rounded-md shadow-md py-5 px-4">
+
+                        <div class="w-10 h-10 bg-color-primary-tint-5 rounded-ss-xl rounded-se-md rounded-ee-2xl rounded-es-md relative ">
+                          
+                            <div class="absolute -left-2 top-1">
+                                <i class="fa-solid fa-users text-2xl"></i>
+                            </div>
+                            
+                        </div>
+
+                        
+
+                        <div class=" mt-4">
+                        <h2 class="text-center font-inter font-semibold text-xl text-color-neutral-d-grey ">Membership Organisations</h2>
+                        <p class=" text-center font-inter text-xs tracking-wide text-color-neutral-d-grey mt-2">Our membership management software provides full automation of membership renewals and payments</p>
+                    </div>
+                    </div>
+
+
+
+                 <!--  card two -->
+                 <div class="flex flex-col items-center justify-center md:w-1/4 w-full md:mt-0 mt-5  rounded-md shadow-md py-5 px-3">
+
+                    <div class="w-10 h-10 bg-color-primary-tint-5 rounded-ss-xl rounded-se-md rounded-ee-2xl rounded-es-md relative ">
+                      
+                        <div class="absolute -left-2 top-1">
+                            <i class="fa-solid fa-landmark-dome text-2xl"></i>
+                        </div>
+                        
+                    </div>
+
+                    
+
+                    <div class=" mt-4">
+                      
+                    <h2 class="text-center font-inter font-semibold text-xl text-color-neutral-d-grey  ">National Associations</h2>
+                    <p class=" text-center font-inter text-xs tracking-wide text-color-neutral-d-grey mt-2">Our membership management software provides full automation of membership renewals and payments</p>
+                </div>
+                </div>
+
+                    <!-- Card three -->
+                    <div class="flex flex-col items-center justify-center md:w-1/4 w-full mt-5 md:mt-0  rounded-md shadow-md py-5 px-4">
+
+                        <div class="w-10 h-10 bg-color-primary-tint-5 rounded-ss-xl rounded-se-md rounded-ee-2xl rounded-es-md relative ">
+                          
+                            <div class="absolute -left-2 top-1">
+                                <i class="fa-solid fa-hands text-2xl"></i>
+                            </div>
+                            
+                        </div>
+
+                        
+
+                        <div class=" mt-4">
+                        <h2 class="text-center font-inter font-semibold text-xl  tracking-wide text-color-neutral-d-grey ">Clubs And Groups</h2>
+                        <p class=" text-center font-inter text-xs tracking-wide text-color-neutral-d-grey mt-2">Our membership management software provides full automation of membership renewals and payments</p>
+                    </div>
+                    </div>
+
+                   </div>
+               
+            </div>
+        </section>
+
+        <section class=" py-5 px-4 md:px-0">
+            <div class="container mx-auto ">
+
+                <div class="flex md:flex-row flex-col items-center justify-center ">
+                <div class="md:w-2/5 w-full">
+                    <img src="./images/rafiki.svg" class="w-full " alt="login">
+                </div>
+                <div class="md:w-3/5 w-full mt-5 md:mt-0">
+                    <h2 class="title max-w-sm">The unseen of spending three years at Pixelgrade</h2>
+                    <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis voluptatibus dicta tenetur quas rem eius, rerum doloremque. Magnam ut quam iste voluptate molestiae tenetur, perferendis animi doloremque autem modi non atque mollitia nesciunt id alias eius quia et minus fugit. Ipsam sed esse minus qui ea amet rerum dicta!</p>
+                    <button class="btn-primary mt-2"> Learn More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-color-neutral-silver">
+            <div class="container py-8 mx-auto">
+
+                <div class="flex flex-row justify-between items-center px-4 md:px-0">
+                <div class=" flex-1 hidden md:inline-block">
+                    <h2 class="title">Helping a local <br/><span class="text-color-primary-shade-1">business reinvent itself</span></h2>
+                    <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-2">We reached here with our hard work and dedication</p>
+                </div>
+
+
+                <div class="flex flex-row gap-10 flex-1">
+                <div class="flex flex-col  items-start gap-8 justify-start">
+
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <i class="fa-solid fa-users text-color-primary-shade-1 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-bold font-inter text-color-neutral-black tracking-wide">2,245,341</h3>
+                        <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-1">Members</p>
+                    </div>
+                    </div>
+
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <i class="fa-solid fa-hand text-color-primary-shade-1 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-bold font-inter text-color-neutral-black tracking-wide">46,328</h3>
+                        <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-1">Members</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start gap-8 justify-start">
+
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <i class="fa-solid fa-hand-pointer text-color-primary-shade-1 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-bold font-inter text-color-neutral-black tracking-wide">828,867</h3>
+                        <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-1">Members</p>
+                    </div>
+                    </div>
+
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <i class="fa-solid fa-credit-card text-color-primary-shade-1 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-bold font-inter text-color-neutral-black tracking-wide">1,926,436</h3>
+                        <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-1">Members</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class=" py-10 px-4 md:px-0">
+            <div class="container mx-auto ">
+
+                <div class="flex md:flex-row flex-col items-center justify-center ">
+                <div class="md:w-2/5 w-full">
+                    <img src="./images/pana.svg" class="w-full " alt="login">
+                </div>
+                <div class="md:w-3/5 w-full mt-5 md:mt-0">
+                    <h2 class="title max-w-sm">How to design your site footer like we did</h2>
+                    <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error dolorem. Quis voluptate adipisci eligendi neque sint nobis perferendis, blanditiis maxime eaque architecto molestiae ratione odio fugiat obcaecati id. Soluta illum, quaerat, possimus repudiandae deserunt debitis maiores eligendi ad quae, dolorum dicta dolores. Labore, sit! Fugit similique, aliquid necessitatibus doloremque rerum a, adipisci ut quos facere voluptatibus iure saepe, beatae nam id delectus facilis laboriosam blanditiis nostrum inventore exercitationem est. Consequuntur consectetur nesciunt rem iure. Optio vero iste eos aut voluptate temporibus. Placeat reprehenderit perferendis a nisi id, cum consequatur ad expedita, rem assumenda, odit officiis nostrum nesciunt sed inventore!</p>
+                    <button class="btn-primary mt-2"> Learn More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <section class="bg-color-neutral-silver py-5">
+
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-start items-center px-4 md:px-0 ">
+                <div class="md:w-1/3 w-full">
+                    <img src="./images/image9.svg" alt="logo 9" class="w-4/5">
+                </div>
+
+                <div class="md:w-2/3 w-full">
+                    <p class="font-inter text-xs  text-color-neutral-d-grey text-justify pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis modi saepe facere! Minima fugiat, blanditiis quasi sed ut sequi est? Quibusdam deleniti unde corporis commodi ad, quas velit praesentium sapiente nam, ut nemo laborum cum earum debitis suscipit labore ex laboriosam nostrum odit repudiandae. Quasi alias, laborum vero sequi sapiente quia temporibus? Deserunt quam ratione fugiat dolores blanditiis? Officiis optio unde velit vitae. Vitae reprehenderit velit, iusto corrupti praesentium accusantium provident atque natus deleniti quod facere dolorem nemo aliquid similique non magni distinctio exercitationem amet facilis quo laboriosam error expedita aspernatur. Maxime, eum dolore? Vel quisquam aspernatur quaerat quibusdam.</p>
+                    <span class="text-base text-color-primary-shade-1 font-semibold font-inter">Tim Smith</span>
+                    <p class="font-inter text-xs tracking-wide text-color-neutral-d-grey py-1 pb-3">Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="flex flex-row  py-2 justify-between items-center">
+                        <img src="./images/clients/logo1a.svg" alt="logo" class="w-8 h-8">
+                        <img src="./images/clients/logo2.svg" alt="logo client">
+                        <img src="./images/clients/logo3.svg" alt="logo client">
+                        <img src="./images/clients/logo4.svg" alt="logo client">
+                        <img src="./images/clients/logo5.svg" alt="logo client">
+                        <img src="./images/clients/logo6.svg" alt="logo client">
+
+
+                        <a href="#" class="text-base text-color-primary-shade-1 font-semibold font-inter hover:opacity-80 ease-in duration-200 hidden md:inline-block"> Meet all customers <i class="fa fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section class="py-10 ">
+
+            <div class="container mx-auto pb-20 ">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="title max-w-sm text-center">Caring is the new marketing</h2>
+                    <p class="paragraph mt-2 max-w-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus amet expedita enim in minus error nemo quibusdam eveniet voluptatum! Autem vitae, molestiae dignissimos voluptatem, et facilis odio</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+
+               <!--      card one -->
+               <div class="flex flex-col items-center justify-center relative  w-full mt-12  lg:mt-0" >
+                        <div class="rounded-xl scale-100 overflow-hidden ">
+                        <a href="#" class="">
+                        <img src="./images/blog/blog1.png" alt="blog" class=" hover:scale-125 duration-200 ease-in-out">
+                    </a>
+                </div>
+                <div class="bg-color-neutral-silver rounded-lg py-4 px-3 absolute md:mx-3 mx-5  -bottom-[50px] flex flex-col items-center shadow-lg shadow-color-neutral-grey-blue">
+<h4 class="text-sm text-center font-inter  text-color-neutral-blue  ">Creating Streamlined Safegaurading Process with OneRen</h4>
+<a href="#" class="text-color-primary-shade-1  text-center hover:opacity-80 ease-in-out  duration-200">Readmore <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    
+                    </div>
+
+
+
+                     <!--      card two -->
+                     <div class="flex flex-col items-center justify-center relative  w-full mt-12  lg:mt-0" >
+                        <div class="rounded-xl scale-100 overflow-hidden ">
+                        <a href="#" class="">
+                        <img src="./images/blog/blog2.png" alt="blog" class=" hover:scale-125 duration-200 ease-in-out">
+                    </a>
+                </div>
+                <div class="bg-color-neutral-silver rounded-lg py-4 px-3 absolute md:mx-3 mx-5  -bottom-[50px] flex flex-col items-center shadow-lg shadow-color-neutral-grey-blue">
+<h4 class="text-sm text-center font-inter  text-color-neutral-blue  ">What are your safeguarding responsibilities and how can you manage them?</h4>
+<a href="#" class="text-color-primary-shade-1  text-center hover:opacity-80 ease-in-out  duration-200">Readmore <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    
+                    </div>
+
+
+
+                     <!--      card three -->
+                     <div class="flex flex-col items-center justify-center relative  w-full mt-12  lg:mt-0" >
+                        <div class="rounded-xl scale-100 overflow-hidden ">
+                        <a href="#" class="">
+                        <img src="./images/blog/blog3.png" alt="blog" class=" hover:scale-125 duration-200 ease-in-out">
+                    </a>
+                </div>
+             <div class="bg-color-neutral-silver rounded-lg py-4 px-3 absolute md:mx-3 mx-5  -bottom-[50px] flex flex-col items-center shadow-xl shadow-color-neutral-grey-blue">
+<h4 class="text-sm text-center font-inter  text-color-neutral-blue  ">Revamping the Membership Model with Triathlon Australia</h4>
+<a href="#" class="text-color-primary-shade-1  text-center hover:opacity-80 ease-in-out  duration-200">Readmore <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="bg-color-neutral-silver">
+
+            <div class="container mx-auto " >
+                <div class="py-5 flex flex-col items-center justify-center ">
+                    <h1 class="text-2xl mt-5 md:mt-0 md:text-3xl lg:text-5xl md:leading-normal lg:leading-tight font-semibold text-center text-color-neutral-black font-inter md:w-1/2 ">Pellentesque suscipit fringilla libero eu.</h1>
+                    <button class="btn-primary mt-3">Get a Demo <i class="fa fa-arrow-right-long ml-2"></i></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-color-neutral-black">
+
+        <section class="container mx-auto py-5 text-color-white">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex-1">
+                    <img src="./images/footer-logo.svg" alt="logo" class="h-5 mb-5">
+                    <p class="text-xs font-inter">Copyright © 2020 Nexcent ltd.</p>
+                    <p class="text-xs font-inter pt-2">All rights reserved</p>
+
+                    <div class="flex flex-row mt-5 gap-2 items-center">
+                        <a href="#" class="w-5 h-5 rounded-full bg-color-neutral-grey flex items-center justify-center"><i class="fa-brands fa-instagram opacity-80 hover:opacity-100 ease-in-out duration-200 text-xs"></i></a>
+
+
+                        <a href="#" class="w-5 h-5 rounded-full bg-color-neutral-grey flex items-center justify-center"><i class="fa-solid fa-globe opacity-80 hover:opacity-100 ease-in-out duration-200 text-xs"></i></a>
+
+
+                        <a href="#" class="w-5 h-5 rounded-full bg-color-neutral-grey flex items-center justify-center"><i class="fa-brands fa-twitter opacity-80 hover:opacity-100 ease-in-out duration-200 text-xs"></i></a>
+
+
+                        <a href="#" class="w-5 h-5 rounded-full bg-color-neutral-grey flex items-center justify-center"><i class="fa-brands fa-youtube opacity-80 hover:opacity-100 ease-in-out duration-200 text-xs"></i></a>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-between flex-1 ">
+                    <div>
+                        <h4 class="font-inter font-semibold text-base ">Company</h4>
+                    <ul class="gap-2">
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">About us</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Blog</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Contact us</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Pricing</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Testimonial</a></li>
+                    </ul>
+                    </div>
+
+                  
+                    <div>
+                        <h4 class="font-inter font-semibold text-base ">Support</h4>
+                    <ul class="gap-2">
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Help Center</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Terms of Service</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Legal</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Privacy Policy</a></li>
+                        <li><a href="#" class="text-xs font-inter opacity-80 hover:opacity-100 ease-in-out duration-200 ">Status</a></li>
+                    </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-inter font-semibold text-base ">Stay up to date</h4>
+                   
+                        <div>
+                            <input type="text" placeholder="Your email Address">
+                            <i class="fa fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./main.js" > </script>
+</body>
+</html>

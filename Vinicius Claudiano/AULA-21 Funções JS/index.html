@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funções JavaScript</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 id="titulo">Funções básicas em JavaScript</h1>
+            <p id="mensagem">Clique nos botões para ver as ações.</p>
+
+            <!-- Dentro do elemento atribui um evento e chama a função. -->
+            <button class="button" onclick="mostrarAlerta()">Exibir Alerta</button>
+            <button class="button" onclick="mudarTexto()">Trocar Texto</button>
+            <button class="button" onclick="mudarCor()">Mudar Cor</button>
+        </div>
+    </section>
+
+    <script>
+        // Cria a função, atribui uma ação e depois vai no elemento que ela vai executar.
+        function mostrarAlerta() {
+            // "alert" aparece aquela janela pop-up
+            alert("Olá Mundo!");
+        }
+
+        // Sempre que quiser puxar um elemento do html é preciso dar todo o diretório assim como ta aqui abaixo.
+        function mudarTexto() {
+            // "document" para chegar até o "getElementById" para pegar um elemento pela id, e "innerText" para trocar o texto. 
+            document.getElementById("mensagem").innerText = "Seu texto foi alterdo!";
+        }
+
+        function mudarCor(){
+            // Para criar uma constante.
+            const message = document.getElementById("mensagem");
+            // "===" significa que são dados igual para a comparação, "==" significa que os dados são diferentes mesmos que representados pelos mesmos caracteres.
+            message.style.color = message.style.color === "red" ? "blue" : "red";
+        }
+
+
+    </script>
+</body>
+
+</html>

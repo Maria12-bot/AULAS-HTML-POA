@@ -1,0 +1,53 @@
+body{
+    background-color: #3000218c;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    border: black solid 2px;
+    
+}
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline black 5%;
+}
+
+.container{
+    /* Essas duas linhas abaixo fazem o conteudo ficar um do lado do outro. */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box{
+    padding: 20px;
+    border: 2px solid #000000d5;
+    width: 30%;
+    /* text-indent: 10px; */ /* margem para o texto */
+}
+
+.absoluto{
+    /* Estilos usando unidades absolutas */
+    width: 300px; /* Absoluto: largura fixa. */
+    height: 200px; /* Absoluto: altura fixa. */
+    font-size: 16px; /* Absoluto: tamanho da fonte fixo. */
+    background-color: #25002548;
+}
+
+.relativo{
+       /* Estilos usando unidades relativas */
+       width: 50%; /* Relativo: largura depende do elemento pai. */
+       height: 50vh; /* Relativo: altura depende da viewport. */
+       font-size: 1.5rem; /* Relativo: tamanho da fonte depende da raiz."rem" multiplica o tamanho com base na fonte do <html>. */
+       background-color: #25002548;
+}
+

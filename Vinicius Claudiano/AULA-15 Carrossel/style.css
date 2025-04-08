@@ -1,0 +1,146 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E4C59E;
+}
+
+header{
+    background-color: #803d3b8a;
+    padding: 20px;
+    border: 2px solid #000000;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid #000000;
+    height: 460px;
+    width: 800px;
+
+    /* Conteudo meio dificil de entender. */
+    overflow: hidden;                            /* Para quando o conteudo ultrapassar a div esconde o conteudo e deixa scrollar */
+    top: 50%;                                    /* Joga o conteudo para dentro, sempre movendo a partir da borda superior */
+    left: 50%;                                   /* Joga o conteudo para dentro, sempre movendo a partir da borda superior */
+    position: absolute;                          /* Sem essa linha o "top" e o "left" não funcionam. */
+    transform: translate(-50%, -50%);            /* Muda o eixo que sempre é borda superior. Negaivo afasta o eixo. */
+    /* Conteudo meio dificil de entender */
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: #AF8260;
+    height: 6px;
+    width: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid #00000048;
+    border-radius: 5px;
+}
+
+.bar:hover{
+    background-color: #322C2B;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+#imagem2:checked ~ .navegacao{
+    background-color: #322C2B;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 700%;
+}
+
+.imagem{
+    width: 14.28571428571429%;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -14.28571428571429%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -28.57142857142857%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -42.85714285714287%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -57.14285714285716%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -71.42857142857145%;
+}
+
+#imagem7:checked ~ .img1{
+    margin-left: -85.71428571428574%;
+}
+
+footer{
+    text-align: center;
+    border: 2px solid #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #803d3bbb;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+@media (max-width: 900px) {    
+    .container {
+        height: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 210px;
+    }
+
+    .navegacao {
+        bottom: 10px; 
+    }
+
+    .bar {
+        width: 15px;
+        height: 5px;
+    }
+
+    .imagem-container img {
+        height: auto;
+        max-width: 100%;
+    }
+}
